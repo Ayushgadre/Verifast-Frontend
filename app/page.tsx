@@ -148,7 +148,7 @@ const MessagingInterface: React.FC = () => {
       />
       <div className="w-full md:w-1/3 lg:w-1/4 bg-white border-r overflow-hidden flex flex-col">
         <div className="border-b bg-white flex items-center justify-center p-4">
-          <h1 className="text-2xl font-semibold text-gray-600">Messaging</h1>
+          <h1 className="text-2xl font-semibold text-gray-600">Chat Session DashBoard</h1>
         </div>
         <div className="flex-grow overflow-y-auto">
           {chatSessions.map((session, index) => (
