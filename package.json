@@ -23,8 +23,6 @@
     "tailwindcss-animate": "^1.0.7",
     "react-date-range": "^1.4.0",
     "date-fns": "^2.22.1"
-}
-
   },
   "devDependencies": {
     "@types/node": "^20",
