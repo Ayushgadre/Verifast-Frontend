@@ -261,7 +261,7 @@ import SnackbarNotification from "@/components/snackbar";
 import { format, formatDistanceToNow } from "date-fns";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
-import { DateRangePicker } from "react-date-range";
+import { DateRangePicker, RangeKeyDict } from "react-date-range"; // Updated import for RangeKeyDict type
 import "react-date-range/dist/styles.css"; // Date range picker default styling
 import "react-date-range/dist/theme/default.css"; // Date range picker theme styling
 
@@ -357,7 +357,7 @@ const MessagingInterface: React.FC = () => {
   }, [searchQuery, chatSessions]);
 
   // Date Range Filter
-  const handleDateChange = (ranges: any) => {
+  const handleDateChange = (ranges: RangeKeyDict) => {
     const { startDate, endDate } = ranges.selection;
     setSelectedDateRange({ startDate, endDate, key: "selection" });
 
